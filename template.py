@@ -18,11 +18,18 @@ def create_parser():
     parser = argparse.ArgumentParser(
         description="Detection flags and options from user.")
 
+    parser.add_argument('-i', '--input',
+        dest='input',
+        default='input.fits',
+        metavar='input',
+        type=str,
+        help='Input file to process.')
+
     parser.add_argument('-v', '--verbose',
-                dest='verbose',
-                action='store_true',
-                help='Print helpful information to the screen? (default: False)',
-                default=False)
+        dest='verbose',
+        action='store_true',
+        help='Print helpful information to the screen? (default: False)',
+        default=False)
 
     return parser
 
