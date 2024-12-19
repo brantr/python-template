@@ -16,7 +16,7 @@ def create_parser():
 
 	# Handle user input with argparse
     parser = argparse.ArgumentParser(
-        description="Detection flags and options from user.")
+        description="Flags and options from user.")
 
     parser.add_argument('-i', '--input',
         dest='input',
